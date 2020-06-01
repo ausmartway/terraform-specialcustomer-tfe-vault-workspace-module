@@ -2,6 +2,9 @@ variable "tfe-organization" {
     description="name of the TFE orgnisation"
 }
 
+variable "tfe-workspace-name" {
+    description="name of the TFE workspace"
+}
 variable "github-repo-fullname" {
     description="fullname of github repo"
 }

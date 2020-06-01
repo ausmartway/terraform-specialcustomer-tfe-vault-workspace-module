@@ -1,6 +1,6 @@
 #TFE workspace and variable
 resource "tfe_workspace" "project-workspace" {
-  name         = "project-workspace"
+  name         = var.tfe-workspace-name
   organization = var.tfe-organization
   vcs_repo  {
    identifier = var.github-repo-fullname
