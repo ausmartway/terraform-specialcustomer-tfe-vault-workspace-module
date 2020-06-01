@@ -10,7 +10,7 @@ variable "oauth-token-id" {
     description="oauth-token-id assosiated with TFE orgnization"
 }
 
-varialbe "vault-namespace" {
+variable "vault-namespace" {
     description="name of the Vault Namesapce"
 }
 
