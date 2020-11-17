@@ -11,17 +11,25 @@ resource "tfe_workspace" "project-workspace" {
 resource "tfe_variable" "project1-workspace-namespace-vault-namespace" {
   workspace_id=tfe_workspace.project-workspace.id
   description="namespace this workspace is bind to"
-  category="env"
-  key="VAULT_NAMESPACE"
+  category="terraform"
+  key="vault_namespace"
   value=var.vault-namespace
 }
 
 resource "tfe_variable" "project-workspace-namespace-vault-token" {
   workspace_id=tfe_workspace.project-workspace.id
   description="The admin VAULT_TOKEN for this namespace"
-  category="env"
-  key="VAULT_TOKEN"
+  category="terraform"
+  key="vault_token"
   value=var.vault-token
   sensitive=true
+}
+
+resource "tfe_variable" "project1-workspace-namespace-vault-addr" {
+  workspace_id=tfe_workspace.project-workspace.id
+  description="The address of Vault"
+  category="terraform"
+  key="vault_addr"
+  value=var.vault-namespace
 }
 
