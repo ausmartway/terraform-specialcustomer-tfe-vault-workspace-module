@@ -20,3 +20,7 @@ variable "vault-namespace" {
 variable "vault-token" {
     description="Vault Token"
 }
+
+variable "vault-addr" {
+    description="Vault Address"
+}
