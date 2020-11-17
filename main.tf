@@ -30,6 +30,6 @@ resource "tfe_variable" "project1-workspace-namespace-vault-addr" {
   description="The address of Vault"
   category="terraform"
   key="vault_addr"
-  value=var.vault-namespace
+  value=var.vault-addr
 }
 
