@@ -7,7 +7,7 @@ resource "tfe_workspace" "project-workspace" {
     oauth_token_id = var.oauth-token-id
   }
 //agent_pool_id is hardcorded for now...
-  agent_pool_id  = "apool-beUYFg6oVLHAQFSS"   
+  agent_pool_id  = "apool-o4QyPYEoiZCPeVCf"   
   execution_mode = "agent"
 }
 
