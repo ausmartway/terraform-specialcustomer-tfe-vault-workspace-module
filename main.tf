@@ -6,6 +6,9 @@ resource "tfe_workspace" "project-workspace" {
    identifier = var.github-repo-fullname
     oauth_token_id = var.oauth-token-id
   }
+//agent_pool_id is hardcorded for now...
+  agent_pool_id  = "apool-beUYFg6oVLHAQFSS"   
+  execution_mode = "agent"
 }
 
 resource "tfe_variable" "project1-workspace-namespace-vault-namespace" {
