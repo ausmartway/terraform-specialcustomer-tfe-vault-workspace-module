@@ -2,6 +2,7 @@
 resource "tfe_workspace" "project-workspace" {
   name         = var.tfe-workspace-name
   organization = var.tfe-organization
+  auto_apply   = true
   vcs_repo  {
    identifier = var.github-repo-fullname
     oauth_token_id = var.oauth-token-id
