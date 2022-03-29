@@ -17,6 +17,10 @@ variable "vault-namespace" {
     description="name of the Vault Namesapce"
 }
 
+variable "tfe-agent-poolid" {
+    description = "agent pool id"
+}
+
 variable "vault-token" {
     description="Vault Token"
 }
